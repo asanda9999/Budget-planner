@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>50/30/20 Budget Planner</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>My Monthly Budget Planner </h1>
+
+    <div class="input-group">
+      <label for="income">Enter Monthly Income:</label>
+      <input type="number" id="income" placeholder="e.g. 10000">
+      <button onclick="calculateBudget()">Calculate</button>
+    </div>
+
+    <div class="results">
+      <!-- Needs -->
+      <div class="category" id="needs-section">
+        <h2>Needs (50%)</h2>
+        <p id="needs-amount">Budget: R0</p>
+        <p id="needs-remaining">Remaining: R0</p>
+        <ul id="needs-list"></ul>
+        <input type="text" id="needs-item" placeholder="Item name">
+        <input type="number" id="needs-price" placeholder="Price">
+        <button onclick="addItem('needs')">Add</button>
+      </div>
+
+      <!-- Wants -->
+      <div class="category" id="wants-section">
+        <h2>Wants (30%)</h2>
+        <p id="wants-amount">Budget: R0</p>
+        <p id="wants-remaining">Remaining: R0</p>
+        <ul id="wants-list"></ul>
+        <input type="text" id="wants-item" placeholder="Item name">
+        <input type="number" id="wants-price" placeholder="Price">
+        <button onclick="addItem('wants')">Add</button>
+      </div>
+
+      <!-- Savings -->
+      <div class="category" id="savings-section">
+        <h2>Savings (20%)</h2>
+        <p id="savings-amount">Budget: R0</p>
+        <p id="savings-remaining">Remaining: R0</p>
+        <ul id="savings-list"></ul>
+        <input type="text" id="savings-item" placeholder="Item name">
+        <input type="number" id="savings-price" placeholder="Price">
+        <button onclick="addItem('savings')">Add</button>
+      </div>
+    </div>
+
+    <!-- Remaining Balance -->
+    <div class="remaining">
+      <h3 id="remaining-message">This is what you have left this month: R0</h3>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

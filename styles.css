@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f4f6;
+    margin: 0;
+    padding: 20px;
+    color: #1a1a1a;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #002b5c; /* navy */
+  }
+  
+  .input-group {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .input-group input {
+    padding: 12px;
+    width: 220px;
+    font-size: 16px;
+    border: 1px solid #ccd6dd;
+    border-radius: 12px;
+    background: #f9f9f9;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input-group input:focus {
+    border-color: #2e8b57; /* green */
+    outline: none;
+  }
+  
+  .input-group button {
+    padding: 12px 18px;
+    font-size: 16px;
+    margin-left: 10px;
+    background: #2e8b57; /* green */
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .input-group button:hover {
+    background: #256b45;
+  }
+  
+  .results {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .category {
+    flex: 1;
+    min-width: 240px;
+    background: #eef2f5;
+    padding: 20px;
+    border-radius: 14px;
+    border: 1px solid #d3dce6;
+  }
+  
+  .category h2 {
+    margin-top: 0;
+    color: #003366; /* dark navy */
+  }
+  
+  .category ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin: 10px 0;
+  }
+  
+  .category input {
+    width: 70%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ccd6dd;
+    border-radius: 10px;
+    background: #f9f9f9;
+  }
+  
+  .category input[type="number"] {
+    width: 25%;
+    margin-left: 5%;
+  }
+  
+  .category button {
+    padding: 10px;
+    margin-top: 5px;
+    background: #2e8b57;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .category button:hover {
+    background: #256b45;
+  }
+  
